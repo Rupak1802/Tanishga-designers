@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  background: #2e0a21;
+}
+
+html.theme-light {
+  background: #f7eedd;
+}
+
+html.theme-light body {
+  background-color: #f7eedd;
+  color: #2e0a21;
+}
+
+html.theme-light .theme-surface {
+  background-color: rgba(46, 10, 33, 0.04);
+}
+
+body {
+  background-color: #2e0a21;
+  color: #f7eedd;
+  overflow-x: hidden;
+  font-feature-settings: "ss01" on, "ss02" on;
+}
+
+::selection {
+  background: #d9a9a0;
+  color: #2e0a21;
+}
+
+/* Slim luxury scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #2e0a21;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #d9a9a0, #c9a35c);
+  border-radius: 8px;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(247, 238, 221, 0.06);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(247, 238, 221, 0.12);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(90deg, #c9a35c, #f0cbd8, #c9a35c);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+
+.eyebrow {
+  font-family: var(--font-manrope);
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* Cursor glow */
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 420px;
+  height: 420px;
+  border-radius: 999px;
+  pointer-events: none;
+  z-index: 5;
+  background: radial-gradient(
+    circle,
+    rgba(217, 169, 160, 0.16) 0%,
+    rgba(201, 163, 92, 0.08) 40%,
+    transparent 70%
+  );
+  transform: translate(-50%, -50%);
+  will-change: transform;
+  mix-blend-mode: screen;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
