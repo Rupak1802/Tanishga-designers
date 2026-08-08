@@ -8,22 +8,15 @@ export type Product = {
   badge: string;
 };
 
-export const INSTAGRAM_URL = "https://www.instagram.com/sasti.in/";
-export const WHATSAPP_URL =
-  "https://l.instagram.com/?u=https%3A%2F%2Fchat.whatsapp.com%2FFseBtR8oQzkHG28Is8fiax%3Fmode%3Dwwt%26utm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnG7RVQR47tfk-RZakcERWE5lbKhTJPeA5BeY8vRpywkF2F1_t3MoAvpFpFO8_aem_ce_xRkhfYnHy-sxP5H7nPw&e=AUDNcD6ar9x-uoXsU8jD6jIVEDjhf4a5-qBXgfrZnI69LTphGm-uMzf2rHjNz2WOnGhkLjScHr5wI9fLRjkGAxvEiGR6dDYLx3XJFjleOfDPVT6GABWNVT7GihCC5hxx8O-gRVllZq2j_-7kjolmmhE";
+export const INSTAGRAM_URL = "https://www.instagram.com/tanishga__designer/?hl=en";
+export const WHATSAPP_URL = "https://wa.me/919566456433";
 
 export const categories = [
-  { name: "Ethnic Wear", image: "/ethnic wear.png" },
-  { name: "Western Wear", image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=800" },
   { name: "Kurtis", image: "/kurthi.png" },
-  { name: "Sarees", image: "/saree.png" },
-  { name: "Lehengas", image: "/lehanga.png" },
   { name: "Co-ords", image: "https://images.unsplash.com/photo-1571908599407-cdb918ed83bf?q=80&w=800" },
-  { name: "Night Wear", image: "https://images.unsplash.com/photo-1596993100471-c3905dafa78e?q=80&w=800" },
+  { name: "Everyday Ethnic", image: "/ethnic wear.png" },
+  { name: "Fabrics", image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=800" },
   { name: "Accessories", image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?q=80&w=800" },
-  { name: "Handbags", image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800" },
-  { name: "Footwear", image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800" },
-  { name: "Jewellery", image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=800" },
 ];
 
 export const bestSellers = [
@@ -129,17 +122,17 @@ export const testimonials = [
   {
     name: "Priya T.",
     quote:
-      "Sasti.in has become my go-to for festive wear. Elegant, comfortable, and never over the top.",
+      "Tanishga Designer has become my go-to for festive wear. Elegant, comfortable, and never over the top.",
     rating: 5,
     image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=200",
   },
 ];
 
 export const whyChooseUs = [
-  { title: "Premium Quality", desc: "Hand-checked fabrics and finishing on every piece." },
-  { title: "Latest Trends", desc: "Curated weekly from runway to real life." },
-  { title: "Affordable Pricing", desc: "Luxury feel, honest price tags — drip without the drop." },
-  { title: "Fast Delivery", desc: "Dispatched within 24 hours, tracked end to end." },
-  { title: "Easy Returns", desc: "7-day no-questions-asked returns." },
+  { title: "Dispatch in 4–5 Days", desc: "Prepared and shipped promptly to your doorstep." },
+  { title: "No COD", desc: "Prepaid Orders Only for a seamless experience." },
+  { title: "No Return or Exchange", desc: "To maintain our rigorous hygiene and designer quality standards." },
+  { title: "Free Shipping", desc: "All Over India, with no hidden costs." },
+  { title: "Everyday Wear", desc: "Designer quality crafted beautifully for your daily lifestyle." },
   { title: "Secure Payments", desc: "100% encrypted checkout, every time." },
 ];

@@ -32,10 +32,10 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-2 md:grid-cols-5 gap-10">
         <div className="col-span-2">
           <div className="flex items-center gap-2 mb-4">
-            <Image src="/logo.png" alt="Sasti.in" width={40} height={40} className="rounded-full" />
-            <span className="font-display text-cream text-xl">Sasti.in</span>
+            <Image src="/logo.png" alt="Tanishga Designer" width={40} height={40} className="rounded-full" />
+            <span className="font-display text-cream text-xl">Tanishga Designer</span>
           </div>
-          <p className="font-script italic text-rose-gold text-lg mb-4">Drip without the drop.</p>
+          <p className="font-script italic text-rose-gold text-lg mb-4">One Stop Solution For Everyday Outfit.</p>
           <p className="text-cream/50 text-sm max-w-xs mb-6">
             Premium fashion for women who love elegance, comfort and confidence — without the luxury price tag.
           </p>
@@ -85,13 +85,13 @@ export default function Footer() {
           <h4 className="eyebrow text-cream/40 mb-4">Contact</h4>
           <ul className="space-y-3 text-cream/70 text-sm">
             <li className="flex items-start gap-2">
-              <MapPin size={15} className="mt-0.5 text-gold shrink-0" /> Coimbatore, Tamil Nadu, India
+              <MapPin size={15} className="mt-0.5 text-gold shrink-0" /> Gobichettipalayam, Erode, Tamil Nadu
             </li>
             <li className="flex items-center gap-2">
-              <Phone size={15} className="text-gold shrink-0" /> +91 90000 00000
+              <Phone size={15} className="text-gold shrink-0" /> +91 95664 56433
             </li>
             <li className="flex items-center gap-2">
-              <Mail size={15} className="text-gold shrink-0" /> hello@sasti.in
+              <Mail size={15} className="text-gold shrink-0" /> hello@tanishgadesigner.in
             </li>
           </ul>
         </div>
@@ -100,8 +100,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-10 mt-12">
         <div className="rounded-2xl overflow-hidden h-52 glass grayscale hover:grayscale-0 transition-all duration-500">
           <iframe
-            title="Sasti.in location map"
-            src="https://www.google.com/maps?q=Coimbatore,Tamil%20Nadu&output=embed"
+            title="Tanishga Designer location map"
+            src="https://www.google.com/maps?q=Gobichettipalayam,Erode,Tamil%20Nadu&output=embed"
             className="w-full h-full border-0"
             loading="lazy"
           />
@@ -109,7 +109,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 mt-10 pt-8 border-t border-cream/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-cream/40 text-xs">© {new Date().getFullYear()} Sasti.in. All rights reserved.</p>
+        <p className="text-cream/40 text-xs">© {new Date().getFullYear()} Tanishga Designer. All rights reserved.</p>
         <div className="flex items-center gap-3 text-cream/40 text-xs">
           <span>Secure payments:</span>
           <span className="glass px-2.5 py-1 rounded text-cream/60">VISA</span>

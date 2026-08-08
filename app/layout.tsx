@@ -27,9 +27,9 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Sasti.in — Drip Without the Drop",
+  title: "Tanishga Designer — One Stop Solution For Everyday Outfit",
   description:
-    "Premium fashion, priced with elegance. Discover Sasti.in's boutique collections — ethnic wear, western wear, sarees, lehengas, accessories and more.",
+    "Premium fashion, priced with elegance. Discover Tanishga Designer's boutique collections — kurtis, co-ords, everyday ethnic, fabrics, accessories and more.",
   icons: {
     icon: "/logo.png",
   },

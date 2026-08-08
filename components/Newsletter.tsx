@@ -24,7 +24,7 @@ export default function Newsletter() {
         </p>
 
         {sent ? (
-          <p className="text-gold font-display text-lg">You're on the list — welcome to Sasti.in ✦</p>
+          <p className="text-gold font-display text-lg">You're on the list — welcome to Tanishga Designer ✦</p>
         ) : (
           <form
             onSubmit={(e) => {

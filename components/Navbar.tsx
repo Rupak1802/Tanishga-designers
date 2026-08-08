@@ -75,9 +75,9 @@ export default function Navbar() {
         }`}
       >
         <a href="#home" className="flex items-center gap-2 shrink-0">
-          <Image src="/logo.png" alt="Sasti.in" width={38} height={38} className="rounded-full" />
+          <Image src="/logo.png" alt="Tanishga Designer" width={38} height={38} className="rounded-full" />
           <span className="font-display text-cream text-lg tracking-wide hidden sm:inline">
-            Sasti<span className="text-rose-gold">.in</span>
+            Tanishga<span className="text-rose-gold"> Designer</span>
           </span>
         </a>
 
@@ -185,7 +185,7 @@ export default function Navbar() {
             className="fixed inset-0 bg-plum-950/98 z-[60] flex flex-col p-8"
           >
             <div className="flex justify-between items-center mb-10">
-              <Image src="/logo.png" alt="Sasti.in" width={36} height={36} className="rounded-full" />
+              <Image src="/logo.png" alt="Tanishga Designer" width={36} height={36} className="rounded-full" />
               <button onClick={() => setOpen(false)} aria-label="Close menu" className="text-cream">
                 <X size={26} />
               </button>

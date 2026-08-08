@@ -1,13 +1,11 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { useEffect, useRef } from "react";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import gsap from "gsap";
+import Image from "next/image";
 import { Gem, ShoppingBag, Heart, Flower2, Sparkles as SparklesIcon } from "lucide-react";
 import Butterfly from "./Butterfly";
-
-const HeroScene = dynamic(() => import("./HeroScene"), { ssr: false });
 
 const floatIcons = [
   { Icon: Gem, top: "14%", left: "6%", delay: 0, color: "#C9A35C" },
@@ -19,12 +17,6 @@ const floatIcons = [
 
 export default function Hero() {
   const headingRef = useRef<HTMLHeadingElement>(null);
-  const mx = useMotionValue(0);
-  const my = useMotionValue(0);
-  const sx = useSpring(mx, { stiffness: 40, damping: 20 });
-  const sy = useSpring(my, { stiffness: 40, damping: 20 });
-  const rotX = useTransform(sy, [-40, 40], [6, -6]);
-  const rotY = useTransform(sx, [-40, 40], [-6, 6]);
 
   useEffect(() => {
     if (!headingRef.current) return;
@@ -36,18 +28,11 @@ export default function Hero() {
     );
   }, []);
 
-  const onMouseMove = (e: React.MouseEvent) => {
-    const { innerWidth, innerHeight } = window;
-    mx.set((e.clientX / innerWidth - 0.5) * 80);
-    my.set((e.clientY / innerHeight - 0.5) * 80);
-  };
-
   const heading = "Where Elegance Meets Every Outfit.".split(" ");
 
   return (
     <section
       id="home"
-      onMouseMove={onMouseMove}
       className="relative min-h-screen bg-plum-gradient overflow-hidden flex items-center pt-36 pb-16"
     >
       {/* ambient background particles / floating icons */}
@@ -76,7 +61,7 @@ export default function Hero() {
             className="flex items-center gap-2 mb-6"
           >
             <Butterfly size={22} color="#C9A35C" />
-            <span className="eyebrow text-gold">Sasti.in · Drip Without the Drop</span>
+            <span className="eyebrow text-gold">Tanishga Designer · One Stop Solution For Everyday Outfit</span>
           </motion.div>
 
           <h1
@@ -133,12 +118,22 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Right side: 3D scene */}
+        {/* Right side: Image composition */}
         <motion.div
-          style={{ rotateX: rotX, rotateY: rotY }}
-          className="relative h-[420px] lg:h-[560px] [perspective:1000px]"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
+          className="relative h-[420px] lg:h-[560px] w-full flex items-center justify-center"
         >
-          <HeroScene />
+          <div className="absolute w-[50%] h-[70%] left-0 top-10 rounded-2xl overflow-hidden shadow-luxury group">
+            <Image src="/kurthi.png" alt="Kurtis" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div className="absolute w-[55%] h-[75%] right-0 top-0 rounded-2xl overflow-hidden shadow-luxury z-10 border-4 border-plum-950 group">
+            <Image src="https://images.unsplash.com/photo-1571908599407-cdb918ed83bf?q=80&w=800" alt="Co-ords" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div className="absolute w-[45%] h-[55%] left-10 bottom-0 rounded-2xl overflow-hidden shadow-luxury z-20 border-4 border-plum-950 group">
+            <Image src="/ethnic wear.png" alt="Ethnic Wear" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+          </div>
         </motion.div>
       </div>
 

@@ -10,27 +10,27 @@ const config: Config = {
     extend: {
       colors: {
         plum: {
-          950: "#210817",
-          900: "#2E0A21",
-          800: "#3A0F2B",
-          700: "#4A1536",
-          600: "#5C1F45",
-          400: "#8A4266",
+          950: "#050505",
+          900: "#0a0a0a",
+          800: "#111111",
+          700: "#1a1a1a",
+          600: "#242424",
+          400: "#333333",
         },
         cream: {
           DEFAULT: "#F7EEDD",
           dim: "#EFE3CE",
         },
         rose: {
-          gold: "#D9A9A0",
-          deep: "#C08A7F",
+          gold: "#D4AF37",
+          deep: "#B5952F",
         },
-        blush: "#F0CBD8",
+        blush: "#E8D399",
         gold: {
-          DEFAULT: "#C9A35C",
-          light: "#E0C48A",
+          DEFAULT: "#D4AF37",
+          light: "#F0D786",
         },
-        ink: "#1B0A14",
+        ink: "#000000",
       },
       fontFamily: {
         display: ["var(--font-fraunces)", "serif"],
@@ -42,15 +42,15 @@ const config: Config = {
       },
       backgroundImage: {
         "plum-gradient":
-          "radial-gradient(120% 120% at 20% 0%, #4A1536 0%, #2E0A21 55%, #210817 100%)",
+          "radial-gradient(120% 120% at 20% 0%, #1a1a1a 0%, #0a0a0a 55%, #000000 100%)",
         "cream-gradient":
           "linear-gradient(180deg, #F7EEDD 0%, #EFE3CE 100%)",
         "gold-line":
-          "linear-gradient(90deg, transparent, #C9A35C, transparent)",
+          "linear-gradient(90deg, transparent, #D4AF37, transparent)",
       },
       boxShadow: {
-        luxury: "0 20px 60px -20px rgba(46,10,33,0.45)",
-        glow: "0 0 40px rgba(217,169,160,0.35)",
+        luxury: "0 20px 60px -20px rgba(0,0,0,0.8)",
+        glow: "0 0 40px rgba(212,175,55,0.25)",
       },
       keyframes: {
         float: {

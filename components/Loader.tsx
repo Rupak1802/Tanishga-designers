@@ -66,7 +66,7 @@ export default function Loader({ onDone }: { onDone: () => void }) {
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-6">
         <div ref={logoRef} className="flex flex-col items-center gap-3">
           <div className="flex items-center gap-3">
-            <Image src="/logo.png" alt="Sasti.in" width={64} height={64} className="rounded-full" />
+            <Image src="/logo.png" alt="Tanishga Designer" width={64} height={64} className="rounded-full" />
             <Butterfly size={40} color="#F7EEDD" />
           </div>
           <p className="eyebrow text-cream/70">Loading Elegance</p>
