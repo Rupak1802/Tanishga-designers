@@ -132,7 +132,7 @@ export default function Hero() {
             <Image src="https://images.unsplash.com/photo-1571908599407-cdb918ed83bf?q=80&w=800" alt="Co-ords" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
           </div>
           <div className="absolute w-[45%] h-[55%] left-10 bottom-0 rounded-2xl overflow-hidden shadow-luxury z-20 border-4 border-plum-950 group">
-            <Image src="/ethnic wear.png" alt="Ethnic Wear" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+            <Image src="/ethnic_wear.png" alt="Ethnic Wear" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
           </div>
         </motion.div>
       </div>

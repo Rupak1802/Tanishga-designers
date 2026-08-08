@@ -14,7 +14,7 @@ export const WHATSAPP_URL = "https://wa.me/919566456433";
 export const categories = [
   { name: "Kurtis", image: "/kurthi.png" },
   { name: "Co-ords", image: "https://images.unsplash.com/photo-1571908599407-cdb918ed83bf?q=80&w=800" },
-  { name: "Everyday Ethnic", image: "/ethnic wear.png" },
+  { name: "Everyday Ethnic", image: "/ethnic_wear.png" },
   { name: "Fabrics", image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=800" },
   { name: "Accessories", image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?q=80&w=800" },
 ];
