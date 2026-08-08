@@ -6,11 +6,11 @@ import { Instagram, Heart } from "lucide-react";
 import { INSTAGRAM_URL } from "@/lib/data";
 
 const posts = [
-  "https://images.unsplash.com/photo-1583391733956-6c78276477e2?q=80&w=500",
+  "/saree.png",
   "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=500",
   "https://images.unsplash.com/photo-1571908599407-cdb918ed83bf?q=80&w=500",
-  "https://images.unsplash.com/photo-1600353568020-1e1a5b8b1a5f?q=80&w=500",
-  "https://images.unsplash.com/photo-1610030181087-540f829eb8cb?q=80&w=500",
+  "/kurthi.png",
+  "/ethnic_wear.png",
   "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=500",
 ];
 

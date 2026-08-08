@@ -86,7 +86,7 @@ export const featured = [
   {
     name: "Champagne Nights Collection",
     tag: "Editorial · Vol. 05",
-    image: "https://images.unsplash.com/photo-1583391733956-6c78276477e2?q=80&w=1400",
+    image: "/lehanga.png",
     price: 5199,
   },
   {
