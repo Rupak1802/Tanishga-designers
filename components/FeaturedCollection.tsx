@@ -3,9 +3,12 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ShoppingBag } from "lucide-react";
-import { featured, WHATSAPP_URL } from "@/lib/data";
+import { useShop } from "@/lib/shop-context";
+import { featured } from "@/lib/data";
 
 export default function FeaturedCollection() {
+  const { addToCart } = useShop();
+
   return (
     <section id="new-arrivals" className="bg-plum-900 py-24 md:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-10 mb-12 flex items-end justify-between flex-wrap gap-4">
@@ -27,9 +30,19 @@ export default function FeaturedCollection() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, delay: i * 0.1 }}
             className="snap-start shrink-0 w-[85vw] md:w-[560px] relative rounded-3xl overflow-hidden group shadow-luxury cursor-pointer"
-            onClick={() => window.open(WHATSAPP_URL, "_blank", "noopener,noreferrer")}
+            onClick={() => {
+              addToCart({
+                id: item.name,
+                name: item.name,
+                price: item.price,
+                mrp: item.price * 1.2,
+                rating: 5,
+                image: item.image,
+                badge: item.tag,
+              });
+            }}
             role="button"
-            aria-label={`Chat on WhatsApp about ${item.name}`}
+            aria-label={`Add ${item.name} to cart`}
           >
             <div className="relative h-[420px] md:h-[520px]">
               <Image
@@ -49,7 +62,15 @@ export default function FeaturedCollection() {
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
-                    window.open(WHATSAPP_URL, "_blank", "noopener,noreferrer");
+                    addToCart({
+                      id: item.name,
+                      name: item.name,
+                      price: item.price,
+                      mrp: item.price * 1.2,
+                      rating: 5,
+                      image: item.image,
+                      badge: item.tag,
+                    });
                   }}
                   className="flex items-center gap-2 rounded-full bg-cream/95 text-plum-900 text-xs font-semibold px-4 py-2.5 hover:bg-gold transition-colors"
                 >

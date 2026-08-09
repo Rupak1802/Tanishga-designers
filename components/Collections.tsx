@@ -52,7 +52,7 @@ export default function Collections() {
           <p className="eyebrow text-rose-deep mb-3">Shop by Category</p>
           <h2 className="font-display text-plum-900 text-4xl md:text-5xl">Our Collections</h2>
           <p className="mt-4 text-plum-700/70 text-sm md:text-base">
-            Eleven curated worlds of fabric, form, and finish — each edited for effortless elegance.
+            A curated selection of premium dry fruits, dates, honey, and saffron.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export default function Collections() {
               key={cat.name}
               onMouseMove={handleTilt}
               onMouseLeave={resetTilt}
-              className="cat-card group relative aspect-[3/4] rounded-2xl overflow-hidden shadow-luxury cursor-pointer [transform-style:preserve-3d]"
+              className="cat-card group relative aspect-square rounded-full overflow-hidden shadow-luxury cursor-pointer [transform-style:preserve-3d]"
             >
               <Image
                 src={cat.image}
@@ -74,10 +74,9 @@ export default function Collections() {
                 sizes="(max-width: 768px) 50vw, 25vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-[1.15]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-plum-950/85 via-plum-950/10 to-transparent" />
-              <div className="absolute bottom-0 left-0 p-4 translate-y-2 group-hover:-translate-y-1 transition-transform duration-400">
-                <span className="text-cream font-display text-lg drop-shadow">{cat.name}</span>
-                <span className="block h-px w-8 bg-gold mt-2 group-hover:w-14 transition-all duration-400" />
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-4 translate-y-2 group-hover:-translate-y-1 transition-transform duration-400 z-10">
+                <span className="text-cream font-display text-xl md:text-2xl drop-shadow-lg font-bold text-center">{cat.name}</span>
+                <span className="block h-1 w-8 bg-gold mt-2 group-hover:w-14 transition-all duration-400" />
               </div>
             </div>
           ))}

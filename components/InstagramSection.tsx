@@ -21,7 +21,7 @@ export default function InstagramSection() {
         <p className="eyebrow text-rose-gold mb-3 flex items-center justify-center gap-2">
           <Instagram size={14} /> Follow Along
         </p>
-        <h2 className="font-display text-cream text-4xl md:text-5xl">@tanishga__designer</h2>
+        <h2 className="font-display text-cream text-4xl md:text-5xl">@charminar_traders</h2>
       </div>
 
       <div className="grid grid-cols-3 md:grid-cols-6 gap-1 md:gap-2 max-w-6xl mx-auto px-2">
@@ -33,7 +33,7 @@ export default function InstagramSection() {
             rel="noreferrer"
             whileHover={{ scale: 1.03 }}
             className="relative aspect-square overflow-hidden group cursor-pointer"
-            aria-label="Open Tanishga Designer on Instagram"
+            aria-label="Open Charminar Traders on Instagram"
           >
             <Image src={src} alt="Instagram post" fill sizes="200px" className="object-cover" />
             <div className="absolute inset-0 bg-plum-950/0 group-hover:bg-plum-950/60 transition-colors duration-300 flex items-center justify-center">

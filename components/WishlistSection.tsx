@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart, ShoppingBag, X } from "lucide-react";
 import { useShop } from "@/lib/shop-context";
-import { bestSellers, WHATSAPP_URL } from "@/lib/data";
+import { bestSellers } from "@/lib/data";
 
 export default function WishlistSection() {
   const { wishlist, toggleWishlist, addToCart } = useShop();
@@ -30,9 +30,9 @@ export default function WishlistSection() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 className="relative rounded-2xl bg-white/70 glass-light overflow-hidden shadow-luxury cursor-pointer"
-                onClick={() => window.open(WHATSAPP_URL, "_blank", "noopener,noreferrer")}
+                onClick={() => addToCart(p)}
                 role="button"
-                aria-label={`Chat on WhatsApp about ${p.name}`}
+                aria-label={`Add ${p.name} to cart`}
               >
                 <div className="relative aspect-[4/5]">
                   <Image src={p.image} alt={p.name} fill sizes="240px" className="object-cover" />

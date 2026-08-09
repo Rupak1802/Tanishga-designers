@@ -10,27 +10,27 @@ const config: Config = {
     extend: {
       colors: {
         plum: {
-          950: "#050505",
-          900: "#0a0a0a",
-          800: "#111111",
-          700: "#1a1a1a",
-          600: "#242424",
-          400: "#333333",
+          950: "#002047",
+          900: "#003D82",
+          800: "#0056B3",
+          700: "#006FDB",
+          600: "#1A8CFF",
+          400: "#4BA3D9",
         },
         cream: {
-          DEFAULT: "#F7EEDD",
-          dim: "#EFE3CE",
+          DEFAULT: "#F5F2E8",
+          dim: "#E8E4D5",
         },
         rose: {
-          gold: "#D4AF37",
-          deep: "#B5952F",
+          gold: "#2A8C3E",
+          deep: "#1A662B",
         },
-        blush: "#E8D399",
+        blush: "#B5DFF2",
         gold: {
-          DEFAULT: "#D4AF37",
-          light: "#F0D786",
+          DEFAULT: "#7FBF3F",
+          light: "#A4D973",
         },
-        ink: "#000000",
+        ink: "#001833",
       },
       fontFamily: {
         display: ["var(--font-fraunces)", "serif"],

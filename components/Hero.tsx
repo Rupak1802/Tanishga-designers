@@ -4,8 +4,7 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import Image from "next/image";
-import { Gem, ShoppingBag, Heart, Flower2, Sparkles as SparklesIcon } from "lucide-react";
-import Butterfly from "./Butterfly";
+import { Gem, ShoppingBag, Heart, Flower2, Sparkles as SparklesIcon, Handshake } from "lucide-react";
 
 const floatIcons = [
   { Icon: Gem, top: "14%", left: "6%", delay: 0, color: "#C9A35C" },
@@ -28,7 +27,7 @@ export default function Hero() {
     );
   }, []);
 
-  const heading = "Where Elegance Meets Every Outfit.".split(" ");
+  const heading = "Quality You Trust, Service We Promise.".split(" ");
 
   return (
     <section
@@ -60,8 +59,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             className="flex items-center gap-2 mb-6"
           >
-            <Butterfly size={22} color="#C9A35C" />
-            <span className="eyebrow text-gold">Tanishga Designer · One Stop Solution For Everyday Outfit</span>
+            <Handshake size={22} color="#7FBF3F" />
+            <span className="eyebrow text-gold">Hello Sir/Madam, Hope you are doing well 😊</span>
           </motion.div>
 
           <h1
@@ -81,8 +80,7 @@ export default function Hero() {
             transition={{ delay: 1.1, duration: 0.7 }}
             className="mt-6 text-cream/70 text-base md:text-lg max-w-md font-body"
           >
-            Discover premium collections designed exclusively for women who love
-            elegance, comfort, and confidence — priced with honesty.
+            Discover premium quality dates, dry fruits, nuts, honey, and saffron sourced carefully for your everyday health and wellness.
           </motion.p>
 
           <motion.div
@@ -126,13 +124,13 @@ export default function Hero() {
           className="relative h-[420px] lg:h-[560px] w-full flex items-center justify-center"
         >
           <div className="absolute w-[50%] h-[70%] left-0 top-10 rounded-2xl overflow-hidden shadow-luxury group">
-            <Image src="/kurthi.png" alt="Kurtis" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+            <Image src="/dates.png" alt="Dates and Dry Fruits" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
           </div>
           <div className="absolute w-[55%] h-[75%] right-0 top-0 rounded-2xl overflow-hidden shadow-luxury z-10 border-4 border-plum-950 group">
-            <Image src="https://images.unsplash.com/photo-1571908599407-cdb918ed83bf?q=80&w=800" alt="Co-ords" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+            <Image src="/nuts.png" alt="Nuts" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
           </div>
           <div className="absolute w-[45%] h-[55%] left-10 bottom-0 rounded-2xl overflow-hidden shadow-luxury z-20 border-4 border-plum-950 group">
-            <Image src="/ethnic_wear.png" alt="Ethnic Wear" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+            <Image src="/honey.png" alt="Honey and Saffron" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
           </div>
         </motion.div>
       </div>
@@ -146,7 +144,7 @@ export default function Hero() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
       >
         <motion.div animate={{ y: [0, 10, 0] }} transition={{ duration: 2, repeat: Infinity }}>
-          <Butterfly size={26} color="#F0CBD8" />
+          <Handshake size={26} color="#4BA3D9" />
         </motion.div>
       </motion.a>
     </section>

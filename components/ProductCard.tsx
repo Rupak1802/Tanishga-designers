@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { Heart, Star, Eye, ShoppingBag } from "lucide-react";
 import { useShop } from "@/lib/shop-context";
 import type { Product } from "@/lib/data";
-import { WHATSAPP_URL } from "@/lib/data";
 
 export default function ProductCard({ product }: { product: Product }) {
   const { addToCart, toggleWishlist, isWished, addRecentlyViewed } = useShop();
@@ -17,9 +16,9 @@ export default function ProductCard({ product }: { product: Product }) {
       whileHover={{ y: -6 }}
       transition={{ type: "spring", stiffness: 260, damping: 20 }}
       className="group relative rounded-2xl bg-white/70 glass-light overflow-hidden shadow-luxury cursor-pointer"
-      onClick={() => window.open(WHATSAPP_URL, "_blank", "noopener,noreferrer")}
+      onClick={() => addToCart(product)}
       role="button"
-      aria-label={`Chat on WhatsApp about ${product.name}`}
+      aria-label={`Add ${product.name} to cart`}
     >
       <div className="relative aspect-[4/5] overflow-hidden">
         <Image

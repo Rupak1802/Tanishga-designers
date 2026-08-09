@@ -75,9 +75,9 @@ export default function Navbar() {
         }`}
       >
         <a href="#home" className="flex items-center gap-2 shrink-0">
-          <Image src="/logo.png" alt="Tanishga Designer" width={38} height={38} className="rounded-full" />
+          <Image src="/logo.png" alt="Charminar Traders" width={38} height={38} className="rounded-full" />
           <span className="font-display text-cream text-lg tracking-wide hidden sm:inline">
-            Tanishga<span className="text-rose-gold"> Designer</span>
+            Charminar<span className="text-rose-gold"> Traders</span>
           </span>
         </a>
 
@@ -167,7 +167,7 @@ export default function Navbar() {
                 autoFocus
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder={listening ? "Listening…" : "Search sarees, kurtis, lehengas…"}
+                placeholder={listening ? "Listening…" : "Search dates, dry fruits, saffron…"}
                 className="bg-transparent outline-none text-cream placeholder:text-cream/40 w-full text-sm"
               />
               <span className="eyebrow text-gold/80 hidden sm:inline">AI Search</span>
@@ -185,7 +185,7 @@ export default function Navbar() {
             className="fixed inset-0 bg-plum-950/98 z-[60] flex flex-col p-8"
           >
             <div className="flex justify-between items-center mb-10">
-              <Image src="/logo.png" alt="Tanishga Designer" width={36} height={36} className="rounded-full" />
+              <Image src="/logo.png" alt="Charminar Traders" width={36} height={36} className="rounded-full" />
               <button onClick={() => setOpen(false)} aria-label="Close menu" className="text-cream">
                 <X size={26} />
               </button>

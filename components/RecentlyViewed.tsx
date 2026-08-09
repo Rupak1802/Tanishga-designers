@@ -3,10 +3,9 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useShop } from "@/lib/shop-context";
-import { WHATSAPP_URL } from "@/lib/data";
 
 export default function RecentlyViewed() {
-  const { recentlyViewed } = useShop();
+  const { recentlyViewed, addToCart } = useShop();
 
   return (
     <AnimatePresence>
@@ -24,9 +23,9 @@ export default function RecentlyViewed() {
                 <div
                   key={p.id}
                   className="shrink-0 w-32 group cursor-pointer"
-                  onClick={() => window.open(WHATSAPP_URL, "_blank", "noopener,noreferrer")}
+                  onClick={() => addToCart(p)}
                   role="button"
-                  aria-label={`Chat on WhatsApp about ${p.name}`}
+                  aria-label={`Add ${p.name} to cart`}
                 >
                   <div className="relative w-32 h-40 rounded-xl overflow-hidden mb-2">
                     <Image

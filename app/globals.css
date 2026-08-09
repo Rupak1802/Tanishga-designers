@@ -7,25 +7,25 @@
 }
 
 html {
-  background: #2e0a21;
+  background: #003D82;
 }
 
 html.theme-light {
-  background: #f7eedd;
+  background: #F5F2E8;
 }
 
 html.theme-light body {
-  background-color: #f7eedd;
-  color: #2e0a21;
+  background-color: #F5F2E8;
+  color: #003D82;
 }
 
 html.theme-light .theme-surface {
-  background-color: rgba(46, 10, 33, 0.04);
+  background-color: rgba(0, 61, 130, 0.04);
 }
 
 body {
-  background-color: #2e0a21;
-  color: #f7eedd;
+  background-color: #003D82;
+  color: #F5F2E8;
   overflow-x: hidden;
   font-feature-settings: "ss01" on, "ss02" on;
 }

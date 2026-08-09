@@ -1,7 +1,5 @@
 import Image from "next/image";
-import { Instagram, Facebook, Twitter, Youtube, MapPin, Phone, Mail } from "lucide-react";
-import Butterfly from "./Butterfly";
-import { INSTAGRAM_URL } from "@/lib/data";
+import { MapPin, Phone, Mail, Handshake } from "lucide-react";
 
 const quickLinks = [
   { label: "Home", href: "#home" },
@@ -12,18 +10,11 @@ const quickLinks = [
   { label: "Contact", href: "#contact" },
 ];
 const categoryLinks = [
-  { label: "Sarees", href: "#collections" },
-  { label: "Lehengas", href: "#collections" },
-  { label: "Kurtis", href: "#collections" },
-  { label: "Co-ords", href: "#collections" },
-  { label: "Accessories", href: "#collections" },
-  { label: "Footwear", href: "#collections" },
-];
-const socialLinks = [
-  { Icon: Instagram, href: INSTAGRAM_URL, label: "Instagram" },
-  { Icon: Facebook, href: "#", label: "Facebook" },
-  { Icon: Twitter, href: "#", label: "Twitter" },
-  { Icon: Youtube, href: "#", label: "YouTube" },
+  { label: "Dates", href: "#collections" },
+  { label: "Dry Fruits", href: "#collections" },
+  { label: "Nuts", href: "#collections" },
+  { label: "Honey", href: "#collections" },
+  { label: "Saffron", href: "#collections" },
 ];
 
 export default function Footer() {
@@ -32,27 +23,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-2 md:grid-cols-5 gap-10">
         <div className="col-span-2">
           <div className="flex items-center gap-2 mb-4">
-            <Image src="/logo.png" alt="Tanishga Designer" width={40} height={40} className="rounded-full" />
-            <span className="font-display text-cream text-xl">Tanishga Designer</span>
+            <Image src="/logo.png" alt="Charminar Traders" width={40} height={40} className="rounded-full" />
+            <span className="font-display text-cream text-xl">Charminar Traders</span>
           </div>
-          <p className="font-script italic text-rose-gold text-lg mb-4">One Stop Solution For Everyday Outfit.</p>
+          <p className="font-script italic text-rose-gold text-lg mb-4">Quality You Trust, Service We Promise.</p>
           <p className="text-cream/50 text-sm max-w-xs mb-6">
-            Premium fashion for women who love elegance, comfort and confidence — without the luxury price tag.
+            Premium quality dates, dry fruits, nuts, honey, and saffron sourced carefully for your everyday health and wellness.
           </p>
-          <div className="flex gap-3">
-            {socialLinks.map(({ Icon, href, label }, i) => (
-              <a
-                key={i}
-                href={href}
-                target={href.startsWith("http") ? "_blank" : undefined}
-                rel={href.startsWith("http") ? "noreferrer" : undefined}
-                aria-label={label}
-                className="w-9 h-9 rounded-full glass flex items-center justify-center text-cream/70 hover:text-gold hover:border-gold transition-colors"
-              >
-                <Icon size={15} />
-              </a>
-            ))}
-          </div>
         </div>
 
         <div>
@@ -91,7 +68,7 @@ export default function Footer() {
               <Phone size={15} className="text-gold shrink-0" /> +91 95664 56433
             </li>
             <li className="flex items-center gap-2">
-              <Mail size={15} className="text-gold shrink-0" /> hello@tanishgadesigner.in
+              <Mail size={15} className="text-gold shrink-0" /> hello@charminartraders.in
             </li>
           </ul>
         </div>
@@ -100,7 +77,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-10 mt-12">
         <div className="rounded-2xl overflow-hidden h-52 glass grayscale hover:grayscale-0 transition-all duration-500">
           <iframe
-            title="Tanishga Designer location map"
+            title="Charminar Traders location map"
             src="https://www.google.com/maps?q=Gobichettipalayam,Erode,Tamil%20Nadu&output=embed"
             className="w-full h-full border-0"
             loading="lazy"
@@ -109,13 +86,13 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 mt-10 pt-8 border-t border-cream/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-cream/40 text-xs">© {new Date().getFullYear()} Tanishga Designer. All rights reserved.</p>
+        <p className="text-cream/40 text-xs">© {new Date().getFullYear()} Charminar Traders. All rights reserved.</p>
         <div className="flex items-center gap-3 text-cream/40 text-xs">
           <span>Secure payments:</span>
           <span className="glass px-2.5 py-1 rounded text-cream/60">VISA</span>
           <span className="glass px-2.5 py-1 rounded text-cream/60">UPI</span>
           <span className="glass px-2.5 py-1 rounded text-cream/60">RuPay</span>
-          <Butterfly size={20} color="#C9A35C" flutter={false} />
+          <Handshake size={20} color="#7FBF3F" />
         </div>
       </div>
     </footer>

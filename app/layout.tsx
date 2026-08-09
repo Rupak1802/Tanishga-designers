@@ -27,9 +27,9 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Tanishga Designer — One Stop Solution For Everyday Outfit",
+  title: "Charminar Traders — Quality You Trust, Service We Promise.",
   description:
-    "Premium fashion, priced with elegance. Discover Tanishga Designer's boutique collections — kurtis, co-ords, everyday ethnic, fabrics, accessories and more.",
+    "Premium quality dates, dry fruits, nuts, honey, and saffron from Charminar Traders.",
   icons: {
     icon: "/logo.png",
   },

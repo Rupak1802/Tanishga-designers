@@ -7,12 +7,10 @@ import OfferBanner from "@/components/OfferBanner";
 import Hero from "@/components/Hero";
 import Collections from "@/components/Collections";
 import FeaturedCollection from "@/components/FeaturedCollection";
-import RecentlyViewed from "@/components/RecentlyViewed";
 import BestSellers from "@/components/BestSellers";
 import WishlistSection from "@/components/WishlistSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
-import InstagramSection from "@/components/InstagramSection";
 import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -33,12 +31,10 @@ export default function Home() {
           <Hero />
           <Collections />
           <FeaturedCollection />
-          <RecentlyViewed />
           <BestSellers />
           <WishlistSection />
           <WhyChooseUs />
           <Testimonials />
-          <InstagramSection />
           <Newsletter />
         </main>
         <Footer />
